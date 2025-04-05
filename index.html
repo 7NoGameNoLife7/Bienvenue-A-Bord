@@ -1,55 +1,94 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page d'accueil</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Source+Sans+3:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Wild Code School | Onboarding | Home Page">
+    <meta name="author" content="Laurent Sandalman">
+    <title>WCS | Onboarding</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media_request.css">
+    <script src="https://kit.fontawesome.com/63f5d36c03.js" crossorigin="anonymous"></script>
+
 </head>
+
 <body>
     <header>
-        <div class="welcome">
-            <h1>Welcome on board!</h1>
-            <img src="asset/logo.svg" alt="Logo">
-            <img src="asset/avatar.png" alt="Avatar">
-        </div>
-        <nav>
+        <nav class="nav">
+            <img src="asset/logo.svg" alt="" class="logo">
             <ul>
-                <li><a href="#articles">Articles</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#articles" title="Read our wonderful articles">Articles</a></li>
+                <li><a href="#about" title="Learn about us">About</a></li>
+                <li><a href="mailto:pipo@example.com" title="email us">Contact</a></li>
             </ul>
         </nav>
+        <div class="header-div">
+            <h1>Welcome on board!</h1>
+            <img src="asset/avatar.png" alt="" class="header-img">
+        </div>
     </header>
     <main>
-        <div class="articles">
-            <h2>Recent articles</h2>
-            <div class="cards-pos">   
-                <div class="card">
-                    <img src="asset/responsive.png" alt="Responsive">
+        <section>
+            <h2 id="articles">Recent articles</h2>
+            <div class="article-grid">
+                <article class="article0-responsive">
+                    <div class="image_container">
+                        <img src="asset/responsive.png" alt="icon with several screens all check-marqued">
+
+                    </div>
                     <h3>Responsive</h3>
-                    <button>READ</button>
-                </div>
-                <div class="card">
-                    <img src="asset/scalable.png" alt="Scalable">
+                    <a href="" class="article-btn">READ</a>
+                </article>
+                <article class="article-scalable">
+                    <div class="image-container">
+                        <img src="asset/scalable.png"
+                            alt="sitting man with computer on the legs. icons symbolizing various activities float around him ">
+
+                    </div>
                     <h3>Scalable</h3>
-                    <button>READ</button>
-                </div>
-                <div class="card">
-                    <img src="asset/inclusive.png" alt="Inclusive">
+                    <a class="article-btn" href="">READ</a>
+                </article>
+                <article class="article-inclusive">
+                    <div class="image-container">
+                        <img src="asset/inclusive.png" alt="4 green hands crossed one on another">
+
+                    </div>
                     <h3>Inclusive</h3>
-                    <button>READ</button>
-                </div>
-            </div> 
-        </div>
-        <div class="about">
-            <h2>About</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet. Pellentesque commodo lacus at sodales sodales. Quisque sagittis orci ut diam condimentum, vel euismod erat placerat. In facilisis eros eget tempus orci facilisis id. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
+                    <a class="article-btn" href="">READ</a>
+                </article>
+            </div>
+        </section>
+
+        <section>
+            <h2 id="about">About</h2>
+            <div class="about-content">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore deserunt, dolor, neque libero itaque
+                    nesciunt mollitia debitis voluptatibus explicabo, aut obcaecati excepturi facere aliquam ut est?
+                    Nihil placeat corrupti velit! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur
+                    similique explicabo animi sit,
+                    velit, incidunt expedita obcaecati possimus culpa rerum ab magnam, impedit inventore autem quidem!
+                    Vel ducimus quasi adipisci. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur
+                    similique explicabo animi sit,
+                    velit, incidunt expedita obcaecati possimus culpa rerum ab magnam, impedit inventore autem quidem!
+                    Vel ducimus quasi adipisci.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur similique explicabo animi sit,
+                    velit, incidunt expedita obcaecati possimus culpa rerum ab magnam, impedit inventore autem quidem!
+                    Vel ducimus quasi adipisci. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur
+                    similique explicabo animi sit,
+                    velit, incidunt expedita obcaecati possimus culpa rerum ab magnam, impedit inventore autem quidem!
+                    Vel ducimus quasi adipisci. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur
+                    similique explicabo animi sit,
+                    velit, incidunt expedita obcaecati possimus culpa rerum ab magnam, impedit inventore autem quidem!
+                    Vel ducimus quasi adipisci.</p>
+            </div>
+        </section>
+        <footer>
+            <p class="footer"><i class="fa-solid fa-copyright"></i> 2024 Wild Code School</p>
+            <p class="footer">Made with <i class="fa-solid fa-heart red"></i> by wilders</p>
+            <p class="footer">Image <a href="https://fr.freepik.com/" class="img-src">freepicks</a></p>
+        </footer>
     </main>
-    <footer>
-        <p>&copy; 2024 Wild Code School</p>
-    </footer>
 </body>
+
 </html>
