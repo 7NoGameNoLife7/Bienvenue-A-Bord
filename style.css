@@ -35,7 +35,6 @@ nav {
 	flex-direction: column;
 	justify-content: space-evenly;
 	align-items: center;
-	height: 25%;
 	width: 100%;
 }
 
@@ -49,6 +48,7 @@ nav ul {
 
 nav ul li {
 	list-style-type: none;
+	cursor: pointer;
 }
 
 nav a {
@@ -92,7 +92,6 @@ h2 {
 .article-grid {
 	display: grid;
 	grid-template-columns: 100%;
-	grid-template-rows: auto;
 	gap: var(--sizefont-main);
 	margin: var(--sizefont-main);
 	justify-items: center;
@@ -101,7 +100,6 @@ h2 {
 article {
 	background-color: var(--bg-second);
 	width: min(50vh, 90%);
-	height: 50vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -111,7 +109,6 @@ article {
 
 .image-container {
 	width: 100%;
-	height: 75%;
 	display: flex;
 	justify-content: center;
 }
@@ -165,45 +162,4 @@ footer {
 .img-src {
 	text-decoration: none;
 	color: var(--color-main);
-}
-@media screen and (min-width: 992px) {
-	nav {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		align-items: start;
-		height: 15%;
-	}
-
-	nav ul {
-		width: 33%;
-	}
-
-	.header-div {
-		flex-direction: row;
-		height: 85%;
-	}
-
-	h1 {
-		width: 25%;
-	}
-
-	.article-grid {
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
-		margin: var(--sizefont-main) calc(var(--sizefont-main) * 5)
-			calc(var(--sizefont-main) * 10);
-	}
-	article {
-		width: 25vw;
-		height: 25vw;
-	}
-
-	.image-container {
-		height: 65%;
-	}
-
-	.article-btn {
-		margin: calc(var(--sizefont-main) * 0.5);
-	}
 }

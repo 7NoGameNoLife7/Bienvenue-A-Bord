@@ -1,0 +1,34 @@
+@media screen and (min-width: 992px) {
+	nav {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: start;
+	}
+
+	nav ul {
+		width: 33%;
+	}
+
+	.header-div {
+		flex-direction: row;
+	}
+
+	h1 {
+		width: 25%;
+	}
+
+	.article-grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		margin: var(--sizefont-main) calc(var(--sizefont-main) * 5)
+			calc(var(--sizefont-main) * 10);
+	}
+	article {
+		width: 25vw;
+	}
+
+	.article-btn {
+		margin: calc(var(--sizefont-main) * 0.5);
+	}
+}
